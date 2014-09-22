@@ -24,7 +24,7 @@ sample code using credential_traverser is below:
 require 'aws-sdk-v1'
 require 'credential_traverser'
 
-CredentialTraverser::traverse do |profile|
+CredentialTraverser.traverse do |profile|
     ec2 = AWS::EC2.new
     puts "#{profile} : #{ec2.instances.count}"
 end
