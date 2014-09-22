@@ -1,6 +1,6 @@
 # CredentialTraverser
 
-TODO: Write a gem description
+This gem enables you to execute AWS API Action to each profile specified in ```~/.aws/credentials```
 
 ## Installation
 
@@ -18,7 +18,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+sample code using credential_traverser is below:
+
+```ruby
+require 'aws-sdk-v1'
+require 'credential_traverser'
+
+CredentialTraverser::traverse do |profile|
+    ec2 = AWS::EC2.new
+    puts "#{profile} : #{ec2.instances.count}"
+end
+```
+
+Then you can see the following outputs:
+
+```
+default : 5
+other_profile : 2
+another_profile : 0
+...
+```
 
 ## Contributing
 
