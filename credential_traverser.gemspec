@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = CredentialTraverser::VERSION
   spec.authors       = ["Masao Mochizuki"]
   spec.email         = ["mochizuki.masao@classmethod.jp"]
-  spec.summary       = %q{executes code for each AWS credentials.}
-  spec.description   = %q{credential_traverser executes codes for each AWS credentials specified in ~/.aws/credentials}
+  spec.summary       = %q{executes AWS API Actions for every AWS credential.}
+  spec.description   = %q{credential_traverser executes codes for every AWS credential specified in ~/.aws/credentials}
   spec.homepage      = ""
   spec.license       = "MIT"
 

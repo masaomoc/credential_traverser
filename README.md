@@ -1,6 +1,6 @@
 # CredentialTraverser
 
-This gem enables you to execute AWS API Action to each profile specified in ```~/.aws/credentials```
+CredentialTraverser enables you to execute AWS API Actions by using every profile specified in ```~/.aws/credentials```
 
 ## Installation
 
